@@ -90,6 +90,10 @@
                 margin-top: 100px;
             }
 
+            .main-container a:last-child {
+                margin-bottom: 150px;
+            }
+
         }
 
         .main-container a:hover {
@@ -119,7 +123,7 @@
 
         .switch {
             position: fixed;
-            z-index: 10;
+            z-index: 9999;
             border: none;
             display: flex;
             bottom: 25px;
@@ -128,6 +132,7 @@
             padding: 5px;
             border-radius: 50px;
             width: 200px;
+            background-color: var(--svg-fill);
             box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -148,8 +153,7 @@
         }
 
         .switch-pill {
-            z-index: 10;
-
+            z-index: 9999;
             position: absolute;
             top: 4px;
             left: 4px;
@@ -159,7 +163,6 @@
             border-radius: 40px;
             transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 0 4px 12px var(--pill-shadow);
-            z-index: 1;
         }
 
         #light-theme:checked~.switch-pill {
